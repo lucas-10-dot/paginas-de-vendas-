@@ -257,6 +257,39 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
  .menu{justify-content:space-between;gap:2px;border-top:1px solid rgba(201,163,106,.22);padding-top:8px}
  .menu a{font-size:.78rem;padding:8px 10px}
 }
+
+/* ===== primeira tela: benefício, foto real e CTA de compra ===== */
+.hero{padding-top:56px;padding-bottom:76px}
+.hero-grid{gap:44px}
+.hero h1{font-size:clamp(2.65rem,4.65vw,4.15rem);line-height:1.06;margin:20px 0}
+.hero h1 span{display:inline;color:var(--rose-deep)}
+.hero .lead{font-size:1.08rem;line-height:1.7;max-width:560px}
+.hero-photo{display:block;width:100%;height:540px;object-fit:cover;object-position:center 38%;border-radius:30px 30px 100px 30px}
+.hero-offer{display:grid;gap:3px;margin-top:22px;padding:14px 17px;border-left:3px solid var(--sage);border-radius:0 12px 12px 0;background:rgba(234,240,232,.72);max-width:510px}
+.hero-offer strong{font-size:1rem;color:var(--sage-deep)}
+.hero-offer span{font-size:.82rem;line-height:1.5;color:var(--muted)}
+.hero-actions{margin-top:19px;gap:11px}
+.hero-actions .hero-buy{min-height:60px;padding:17px 22px;font-size:1rem}
+.hero-actions .btn.light{min-height:54px}
+.hero .trust-line{margin-top:15px;gap:10px 15px}
+@media(max-width:900px){
+ .hero{padding-top:42px;padding-bottom:68px}
+ .hero-grid{gap:30px}
+ .hero h1{font-size:clamp(2.6rem,7vw,3.7rem)}
+ .hero-photo{height:450px;object-position:center 38%}
+ .hero-offer{max-width:none}
+}
+@media(max-width:600px){
+ .hero{padding:36px 0 64px}
+ .hero h1{font-size:2.48rem;line-height:1.08;margin:18px 0}
+ .hero .lead{font-size:1rem}
+ .hero-photo{height:380px;border-radius:22px 22px 72px 22px;object-position:center 35%}
+ .hero-actions{margin-top:16px}
+ .hero-actions .hero-buy,.hero-actions .btn.light{width:100%;justify-content:center}
+ .hero-offer{margin-top:18px;padding:12px 14px}
+ .hero .trust-line{font-size:.78rem;gap:8px 12px}
+}
+
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -277,9 +310,10 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
  <div class="container hero-grid">
   <div class="reveal">
    <span class="eyebrow"><svg class="spark" viewBox="0 0 24 24"><path d="M12 2l2.200 6.800L21 11l-6.800 2.200L12 20l-2.200-6.800L3 11l6.800-2.200z"/></svg>Para a fase que está prestes a começar</span>
-   <h1>Sua licença está acabando. <span>Vamos preparar sua volta?</span></h1>
-   <p class="lead">Um plano prático de 4 semanas para ajudar você a organizar os cuidados com o bebê, a rotina da casa e a preparação para o retorno ao trabalho — uma etapa de cada vez.</p>
-   <div class="hero-actions"><a class="btn" href="#comprar">Quero conhecer o kit <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="btn light" href="#conteudo">Ver o que vem dentro</a></div>
+   <h1>Sua licença está acabando. <span>Prepare sua volta ao trabalho com mais tranquilidade.</span></h1>
+   <p class="lead">Organize os cuidados com o bebê, a rotina da casa e os próximos passos profissionais com um kit digital prático, guiado por um plano de quatro semanas.</p>
+   <div class="hero-offer"><strong>Kit digital completo por R$ 19,90</strong><span>E-book, cartilha, plano de 4 semanas, exercícios e checklists.</span></div>
+   <div class="hero-actions"><a class="btn hero-buy" href="#comprar">Quero preparar minha volta <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="btn light" href="#conteudo">Ver os materiais</a></div>
    <div class="trust-line">
     <span><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Material digital</span>
     <span><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Celular ou impressão</span>
@@ -288,31 +322,7 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
   </div>
   <div class="hero-visual reveal">
    <div class="photo-frame"></div>
-   <svg class="hero-photo" viewBox="0 0 600 540" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustração de uma mãe abraçando seu bebê em casa">
-    <defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6dbe2"/><stop offset="1" stop-color="#e6eee2"/></linearGradient></defs>
-    <rect width="600" height="540" fill="url(#hg)"/>
-    <circle cx="480" cy="140" r="86" fill="#fff" opacity=".55"/>
-    <circle cx="480" cy="140" r="56" fill="#fff" opacity=".6"/>
-    <path d="M50 540V210a115 115 0 0 1 230 0v330z" fill="#fff" opacity=".5"/>
-    <path d="M165 95v445M50 270h230" stroke="#efd2da" stroke-width="5"/>
-    <rect x="470" y="440" width="76" height="100" rx="12" fill="#c9788c"/>
-    <path d="M508 440c-52-38-64-100-34-156 42 40 54 100 34 156z" fill="#748c78"/>
-    <path d="M508 440c40-30 58-78 40-126-36 30-50 80-40 126z" fill="#8aa38e"/>
-    <path d="M508 440c-20-20-24-52-6-84 22 24 26 56 6 84z" fill="#58705c"/>
-    <path d="M170 540c0-120 52-200 126-200s126 80 126 200z" fill="#9e4e64"/>
-    <rect x="278" y="318" width="36" height="40" rx="14" fill="#efc2a6"/>
-    <circle cx="296" cy="292" r="48" fill="#f3cdb4"/>
-    <path d="M246 296c-10-66 40-92 86-70 26 12 28 44 20 70-10-32-32-48-64-44-24 4-34 20-42 44z" fill="#4a3236"/>
-    <circle cx="282" cy="300" r="3.500" fill="#4a3236"/><circle cx="312" cy="300" r="3.500" fill="#4a3236"/>
-    <path d="M285 316q11 9 22 0" stroke="#b86b7c" stroke-width="3.500" fill="none" stroke-linecap="round"/>
-    <path d="M330 480c8-44 40-66 82-56 32 8 50 40 42 86H330z" fill="#fffaf5"/>
-    <circle cx="398" cy="408" r="32" fill="#f6d6c0"/>
-    <path d="M370 400c6-22 38-30 56-8-18-8-38-6-56 8z" fill="#8a6a5c"/>
-    <circle cx="388" cy="412" r="2.500" fill="#4a3236"/><circle cx="408" cy="412" r="2.500" fill="#4a3236"/>
-    <path d="M388 424q10 7 20 0" stroke="#c9788c" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <path d="M232 470c46 34 130 32 188-16" stroke="#7d3a4e" stroke-width="34" fill="none" stroke-linecap="round"/>
-    <g fill="#c9a36a" opacity=".8"><path d="M90 400l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/><path d="M540 320l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/></g>
-   </svg>
+   <img class="hero-photo" src="https://images.pexels.com/photos/7282626/pexels-photo-7282626.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Mãe acolhendo seu bebê enquanto usa um notebook em casa, preparando-se para conciliar maternidade e trabalho" width="1400" height="933" fetchpriority="high" decoding="async">
    <div class="photo-tint"></div>
    <div class="floating-card"><span class="mini-label">Seu próximo passo</span><strong>Você não precisa resolver tudo hoje.</strong><p>Comece com um plano possível para a sua realidade.</p></div>
   </div>
