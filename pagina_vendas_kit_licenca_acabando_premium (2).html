@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Prepare sua volta ao trabalho após a licença-maternidade com o Kit Licença Acabando: ebook, cartilha, plano de quatro semanas e checklists.">
+<meta name="theme-color" content="#9e4e64">
+<title>Kit Licença Acabando — Volta ao Trabalho Mãe</title>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#c9788c;--rose-deep:#9e4e64;--rose-dark:#7d3a4e;--rose-light:#f8e8ec;--cream:#fffaf5;--paper:#fffdfb;--sage:#748c78;--sage-deep:#58705c;--sage-light:#eaf0e8;--gold:#c9a36a;--ink:#2b2325;--muted:#6f6366;--line:#eadfe0;--shadow:0 24px 70px rgba(88,52,60,.13);--shadow-sm:0 10px 30px rgba(88,52,60,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p{margin-top:0}
+.container{width:min(1160px,91%);margin:auto}
+h1,h2,.serif{font-family:"Playfair Display",Georgia,serif;letter-spacing:-.6px}
+h1{font-size:clamp(2.6rem,5.4vw,4.7rem);line-height:1.04;margin:22px 0;font-weight:600}
+h1 span,h2 em{color:var(--rose-deep);font-style:italic}
+h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.12;margin-bottom:16px;font-weight:600}
+h3{font-size:1.1rem;line-height:1.35;margin-bottom:9px}
+.lead{font-size:1.14rem;color:#62575a;max-width:600px}
+.muted{color:var(--muted)}
+.kicker{color:var(--rose-deep);font-size:.76rem;letter-spacing:2px;font-weight:700;text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.center .kicker{justify-content:center}
+.kicker:before{content:"";width:26px;height:1px;background:var(--gold)}
+.center .kicker:after{content:"";width:26px;height:1px;background:var(--gold)}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(255,250,245,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(234,223,224,.8)}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:700;color:var(--rose-deep)}
+.logo-mark{width:40px;height:40px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,var(--rose-light),#fff);border:1px solid #f0dce1}
+.logo-mark svg{width:20px;height:20px;fill:var(--rose-deep)}
+.nav-note{font-size:.86rem;color:var(--muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--rose-deep),var(--rose-dark));color:#fff;text-decoration:none;padding:16px 26px;border-radius:14px;font-weight:700;border:1px solid transparent;box-shadow:0 12px 28px rgba(158,78,100,.28);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 36px rgba(158,78,100,.34)}
+.btn.light{background:#fff;color:var(--rose-deep);border-color:#efd6dd;box-shadow:none}
+.btn.sage{background:linear-gradient(135deg,var(--sage),var(--sage-deep));box-shadow:0 12px 28px rgba(116,140,120,.28)}
+.btn.sm{padding:11px 18px;font-size:.9rem;border-radius:12px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:72px 0 90px;background:radial-gradient(ellipse at 4% 0,#f7e1e7 0,transparent 40%),radial-gradient(ellipse at 96% 25%,#e7eee3 0,transparent 34%),var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:58px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:#fff;border:1px solid #f0dce1;border-radius:99px;color:var(--rose-deep);font-size:.83rem;font-weight:700;box-shadow:var(--shadow-sm)}
+.hero-actions{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin-top:28px}
+.trust-line{font-size:.84rem;color:var(--muted);margin-top:18px;display:flex;gap:16px;flex-wrap:wrap}
+.trust-line span{display:inline-flex;align-items:center;gap:6px}
+.trust-line svg{width:15px;height:15px;stroke:var(--sage-deep);fill:none;stroke-width:2.4}
+.hero-visual{position:relative;min-width:0}
+.hero-photo{width:100%;height:540px;object-fit:cover;border-radius:30px 30px 120px 30px;box-shadow:var(--shadow);background:linear-gradient(160deg,#f3d9df,#e5ece2)}
+.photo-tint{position:absolute;inset:0;border-radius:30px 30px 120px 30px;background:linear-gradient(0deg,rgba(42,28,30,.38),transparent 55%);pointer-events:none}
+.photo-frame{position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--gold);border-radius:34px 34px 124px 34px;z-index:-1;opacity:.6}
+.floating-card{position:absolute;left:-38px;bottom:30px;width:min(320px,84%);background:rgba(255,253,251,.96);backdrop-filter:blur(10px);border:1px solid #fff;border-radius:20px;padding:20px;box-shadow:var(--shadow)}
+.mini-label{font-size:.74rem;text-transform:uppercase;letter-spacing:1.3px;color:var(--sage-deep);font-weight:700}
+.floating-card strong{display:block;font-family:"Playfair Display",Georgia,serif;font-size:1.3rem;line-height:1.25;margin:6px 0}
+.floating-card p{font-size:.85rem;color:var(--muted);margin:0}
+.kit-chip{position:absolute;right:-18px;top:34px;display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px 16px 12px 12px;box-shadow:var(--shadow)}
+.kit-chip .ico{width:42px;height:42px;border-radius:13px;background:var(--rose-light);display:grid;place-items:center}
+.kit-chip .ico svg{width:22px;height:22px;stroke:var(--rose-deep);fill:none;stroke-width:1.8}
+.kit-chip b{display:block;font-size:.92rem;line-height:1.2}
+.kit-chip small{color:var(--muted);font-size:.78rem}
+
+/* stats */
+.stats{margin-top:-44px;position:relative;z-index:5}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
+.stat{padding:26px 20px;text-align:center;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:"Playfair Display",Georgia,serif;font-size:2.4rem;line-height:1;color:var(--rose-deep);font-weight:600}
+.stat span{font-size:.86rem;color:var(--muted)}
+
+/* sections */
+.section{padding:92px 0}
+.section-head{max-width:740px;margin-bottom:40px}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+.center p{max-width:680px;margin-left:auto;margin-right:auto;color:var(--muted)}
+.soft{background:#f6f1eb}
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pain-card{background:var(--paper);border:1px solid var(--line);padding:28px;border-radius:22px;transition:transform .25s,box-shadow .25s}
+.pain-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}
+.pain-icon{width:50px;height:50px;border-radius:16px;display:grid;place-items:center;background:var(--rose-light);margin-bottom:18px}
+.pain-icon svg{width:24px;height:24px;stroke:var(--rose-deep);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pain-card p{font-size:.94rem;color:var(--muted);margin-bottom:0}
+.quote-band{padding:36px;border-radius:28px;background:var(--sage-light);display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center;margin-top:30px}
+.quote-band svg{height:270px;width:100%;border-radius:20px}
+.quote-band img{height:270px;width:100%;object-fit:cover;border-radius:20px;background:#d9e3d6}
+.quote-band blockquote{font-family:"Playfair Display",Georgia,serif;font-size:clamp(1.55rem,3vw,2.2rem);line-height:1.25;margin:0}
+.quote-band blockquote span{color:var(--sage-deep);font-style:italic}
+
+/* for whom */
+.who{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
+.who svg{width:100%;height:440px;border-radius:26px;box-shadow:var(--shadow)}
+.who img{width:100%;height:440px;object-fit:cover;border-radius:26px;box-shadow:var(--shadow);background:linear-gradient(160deg,#f3d9df,#e5ece2)}
+.who ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:14px}
+.who li{display:flex;gap:13px;align-items:flex-start;color:#5b5154}
+.tick{width:26px;height:26px;flex:0 0 26px;border-radius:50%;background:var(--sage-light);display:grid;place-items:center}
+.tick svg{width:14px;height:14px;stroke:var(--sage-deep);fill:none;stroke-width:3}
+
+/* weeks */
+.weeks{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative}
+.week{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px 23px;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.week:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}
+.week:after{content:"";position:absolute;right:-18px;top:-18px;width:70px;height:70px;background:var(--rose-light);border-radius:50%}
+.week-num{position:relative;z-index:1;font-family:"Playfair Display",Georgia,serif;font-size:3rem;line-height:1;color:var(--rose);opacity:.55;font-weight:600}
+.week-no{position:relative;z-index:1;display:block;margin-top:10px;font-size:.74rem;color:var(--rose-deep);font-weight:800;letter-spacing:1.3px;text-transform:uppercase}
+.week h3{font-family:"Playfair Display",Georgia,serif;font-size:1.5rem;margin:8px 0 9px}
+.week p{font-size:.91rem;color:var(--muted);margin:0}
+
+/* kit showcase */
+.showcase{background:linear-gradient(180deg,var(--cream),#f6ece9)}
+.books{position:relative;height:430px;display:flex;justify-content:center;align-items:flex-end;margin-bottom:46px}
+.book{position:absolute;bottom:10px;width:230px;height:330px;border-radius:6px 16px 16px 6px;padding:28px 24px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;box-shadow:0 30px 60px rgba(60,30,38,.28),inset 6px 0 0 rgba(0,0,0,.12),inset 8px 0 14px rgba(255,255,255,.12);transition:transform .35s}
+.book:before{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.35);border-radius:3px 10px 10px 3px;pointer-events:none}
+.book small{font-size:.66rem;letter-spacing:2px;text-transform:uppercase;opacity:.85;font-weight:700}
+.book strong{font-family:"Playfair Display",Georgia,serif;font-size:1.65rem;line-height:1.12;font-weight:600}
+.book .tag{font-size:.75rem;opacity:.9}
+.book svg{width:46px;height:46px;stroke:rgba(255,255,255,.85);fill:none;stroke-width:1.4}
+.b1{background:linear-gradient(160deg,#b4607a,#7d3a4e);transform:translateX(-250px) rotate(-7deg)}
+.b2{background:linear-gradient(160deg,#86a08a,#58705c);z-index:2;transform:translateY(-14px)}
+.b3{background:linear-gradient(160deg,#d8a5b2,#b2677c);transform:translateX(250px) rotate(7deg)}
+.books:hover .b1{transform:translateX(-270px) rotate(-9deg)}
+.books:hover .b3{transform:translateX(270px) rotate(9deg)}
+.includes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.include{display:flex;gap:15px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:20px;background:#fff;transition:box-shadow .25s}
+.include:hover{box-shadow:var(--shadow-sm)}
+.check{width:32px;height:32px;flex:0 0 32px;display:grid;place-items:center;border-radius:50%;background:var(--sage-light)}
+.check svg{width:16px;height:16px;stroke:var(--sage-deep);fill:none;stroke-width:3}
+.include h3{margin:0 0 4px;font-size:1.02rem}
+.include p{font-size:.88rem;color:var(--muted);margin:0}
+
+/* benefits */
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.benefit{padding:28px;border-radius:22px;background:#fff;border:1px solid var(--line)}
+.benefit strong{display:block;margin:6px 0 6px;font-size:1.05rem}
+.benefit p{font-size:.92rem;color:var(--muted);margin:0}
+
+/* price */
+.price-section{background:linear-gradient(135deg,#f5e1e6,#fffaf5 55%,#e8efe5)}
+.price-layout{display:grid;grid-template-columns:1fr .9fr;gap:48px;align-items:center}
+.price-img{position:relative}
+.price-img svg{height:540px;width:100%;border-radius:28px;box-shadow:var(--shadow)}
+.price-img img{height:540px;width:100%;object-fit:cover;border-radius:28px;box-shadow:var(--shadow);background:linear-gradient(160deg,#f3d9df,#e5ece2)}
+.price-img:before{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold);border-radius:30px;opacity:.55;z-index:-1}
+.price-card{background:#fff;border:1px solid #ead7dc;border-radius:28px;padding:38px;box-shadow:var(--shadow);position:relative}
+.price-card .ribbon{position:absolute;top:-14px;left:34px;background:linear-gradient(135deg,var(--gold),#b38a52);color:#fff;font-size:.72rem;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;padding:7px 14px;border-radius:99px}
+.price-card .label{font-size:.75rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:800;color:var(--rose-deep)}
+.price{font-family:"Playfair Display",Georgia,serif;font-size:4rem;line-height:1.1;margin:14px 0 4px;font-weight:600}
+.price small{font:600 1.1rem "DM Sans",sans-serif;margin-right:4px}
+.price-card ul{list-style:none;padding:0;margin:22px 0;display:grid;gap:11px;color:#5a5154}
+.price-card li{display:flex;gap:11px;align-items:center}
+.price-card li .tick{width:22px;height:22px;flex-basis:22px}
+.price-card li .tick svg{width:12px;height:12px}
+.price-card .btn{width:100%;margin-top:6px;padding:18px}
+.small-note{font-size:.8rem;color:var(--muted);margin:13px 0 0}
+.secure{display:flex;align-items:center;gap:8px;justify-content:center;font-size:.8rem;color:var(--muted);margin-top:14px}
+.secure svg{width:15px;height:15px;stroke:var(--sage-deep);fill:none;stroke-width:2}
+
+/* faq */
+.faq{max-width:820px;margin:auto}
+details{border-bottom:1px solid var(--line);padding:21px 0}
+summary{cursor:pointer;list-style:none;font-weight:700;display:flex;justify-content:space-between;gap:18px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--rose-deep);font-size:1.4rem;line-height:1;transition:transform .2s}
+details[open] summary:after{content:"−"}
+details p{color:var(--muted);margin:12px 0 0;max-width:760px}
+
+/* last cta */
+.last-cta{position:relative;overflow:hidden;padding:100px 0;text-align:center;color:#fff;background:#3d2f33}
+.last-cta .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.38}
+.last-cta:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(125,58,78,.82),rgba(88,112,92,.78));z-index:1}
+.last-cta .container{position:relative;z-index:2}
+.last-cta .kicker{color:#f5dfe5;justify-content:center}
+.last-cta p{max-width:650px;margin:0 auto 24px;color:#f6ebee}
+.last-cta .btn{background:#fff;color:var(--rose-dark);box-shadow:0 14px 34px rgba(0,0,0,.25)}
+footer{padding:34px 0 90px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}
+.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+footer p{max-width:750px;margin:7px 0}
+
+/* mobile cta */
+.mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px 4%;background:rgba(255,250,245,.96);backdrop-filter:blur(14px);border-top:1px solid var(--line);display:none;align-items:center;justify-content:space-between;gap:12px;transform:translateY(110%);transition:transform .3s}
+.mobile-cta.show{transform:none}
+.mobile-cta b{font-family:"Playfair Display",Georgia,serif;font-size:1.3rem;color:var(--rose-deep)}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media(max-width:900px){.hero-grid,.who,.price-layout{grid-template-columns:1fr}.hero-grid{gap:38px}.hero-photo{height:450px}.floating-card{left:14px}.kit-chip{right:10px}.weeks{grid-template-columns:repeat(2,1fr)}.quote-band{grid-template-columns:1fr}.quote-band img{height:250px}.price-img img{height:360px}.section{padding:68px 0}.stats-row{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.who img,.who svg{height:360px}.quote-band svg{height:250px}.price-img svg{height:380px}.includes{grid-template-columns:1fr}.books{height:380px}.book{width:190px;height:280px;padding:22px 18px}.book strong{font-size:1.35rem}.b1{transform:translateX(-135px) rotate(-7deg)}.b3{transform:translateX(135px) rotate(7deg)}.books:hover .b1{transform:translateX(-135px) rotate(-7deg)}.books:hover .b3{transform:translateX(135px) rotate(7deg)}.mobile-cta{display:flex}}
+@media(max-width:600px){.nav{min-height:64px}.nav-note{display:none}.hero{padding:44px 0 70px}h1{font-size:2.6rem}.hero-photo{height:390px;border-radius:22px 22px 80px 22px}.photo-tint{border-radius:22px 22px 80px 22px}.photo-frame{display:none}.floating-card{bottom:14px;padding:15px}.kit-chip{top:16px}.pain-grid,.benefits{grid-template-columns:1fr}.section{padding:56px 0}.quote-band{padding:20px}.price-card{padding:30px 22px}.price{font-size:3.3rem}.footer-row{display:block}.books{height:340px}.book{width:150px;height:226px;padding:16px 14px}.book strong{font-size:1.08rem}.book svg{width:32px;height:32px}.b1{transform:translateX(-96px) rotate(-7deg)}.b3{transform:translateX(96px) rotate(7deg)}.books:hover .b1{transform:translateX(-96px) rotate(-7deg)}.books:hover .b3{transform:translateX(96px) rotate(7deg)}.stat b{font-size:2rem}}
+@media(max-width:420px){.weeks{grid-template-columns:1fr}.hero-actions .btn{width:100%}}
+
+/* ===== premium header & buttons ===== */
+header{background:rgba(255,250,245,.82);backdrop-filter:blur(18px) saturate(1.4);border-bottom:1px solid rgba(201,163,106,.35);box-shadow:0 8px 30px rgba(88,52,60,.06)}
+.topbar{background:linear-gradient(90deg,#7d3a4e,#9e4e64 50%,#58705c);color:#fdf1f4;font-size:.78rem;letter-spacing:.6px;text-align:center;padding:8px 0}
+.topbar .container{display:flex;align-items:center;justify-content:center;gap:12px}
+.spark{width:13px;height:13px;fill:var(--gold);flex:0 0 13px}
+.eyebrow .spark{width:14px;height:14px}
+.nav{min-height:78px}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--ink)}
+.brand-mark{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(145deg,#c9788c,#7d3a4e);box-shadow:0 8px 20px rgba(158,78,100,.35),inset 0 1px 0 rgba(255,255,255,.35);position:relative}
+.brand-mark:after{content:"";position:absolute;inset:-4px;border-radius:19px;border:1px solid rgba(201,163,106,.7)}
+.brand-mark svg{width:22px;height:22px;fill:#fff}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text b{font-family:"Playfair Display",Georgia,serif;font-size:1.18rem;font-weight:600;letter-spacing:-.2px;color:var(--rose-dark)}
+.brand-text small{font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--sage-deep);font-weight:700;margin-top:3px}
+.menu{display:flex;gap:6px;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:99px;padding:5px}
+.menu a{text-decoration:none;font-size:.9rem;font-weight:600;color:var(--muted);padding:9px 18px;border-radius:99px;transition:background .2s,color .2s}
+.menu a:hover{background:var(--rose-light);color:var(--rose-deep)}
+
+.btn{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(120deg,#b95f79,#9e4e64 45%,#7d3a4e);background-size:200% 100%;border:1px solid rgba(255,255,255,.18);box-shadow:0 14px 30px rgba(158,78,100,.38),inset 0 1px 0 rgba(255,255,255,.3);letter-spacing:.2px;transition:transform .25s,box-shadow .25s,background-position .5s}
+.btn:before{content:"";position:absolute;top:0;left:-70%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);animation:shine 3.8s ease-in-out infinite;z-index:-1}
+.btn:hover{background-position:100% 0;transform:translateY(-3px) scale(1.015);box-shadow:0 20px 40px rgba(158,78,100,.45),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn:active{transform:translateY(-1px) scale(.99)}
+.btn .arr{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.22);display:grid;place-items:center;flex:0 0 28px;transition:transform .25s,background .25s}
+.btn .arr svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.btn:hover .arr{transform:translateX(4px);background:rgba(255,255,255,.32)}
+.btn.sm{padding:10px 12px 10px 20px;font-size:.9rem}
+.btn.sm .arr{width:24px;height:24px;flex-basis:24px}
+.btn.light{background:#fff;color:var(--rose-deep);border:1px solid #e9cbd3;box-shadow:0 8px 22px rgba(88,52,60,.08)}
+.btn.light:before{background:linear-gradient(100deg,transparent,rgba(201,120,140,.22),transparent)}
+.btn.light:hover{background:var(--rose-light);box-shadow:0 14px 30px rgba(88,52,60,.14)}
+.hero-actions .btn:not(.light),.price-card .btn,.mobile-cta .btn{animation:glow 2.8s ease-in-out infinite}
+.price-card .btn{font-size:1.05rem}
+.last-cta .btn{background:#fff;color:var(--rose-dark);border-color:#fff;animation:glowW 2.8s ease-in-out infinite}
+.last-cta .btn:before{background:linear-gradient(100deg,transparent,rgba(201,120,140,.3),transparent)}
+.last-cta .btn .arr{background:var(--rose-light)}
+@keyframes shine{0%,55%{left:-70%}100%{left:140%}}
+@keyframes glow{0%,100%{box-shadow:0 14px 30px rgba(158,78,100,.38),0 0 0 0 rgba(201,120,140,.45),inset 0 1px 0 rgba(255,255,255,.3)}50%{box-shadow:0 14px 30px rgba(158,78,100,.38),0 0 0 12px rgba(201,120,140,0),inset 0 1px 0 rgba(255,255,255,.3)}}
+@keyframes glowW{0%,100%{box-shadow:0 14px 34px rgba(0,0,0,.25),0 0 0 0 rgba(255,255,255,.55)}50%{box-shadow:0 14px 34px rgba(0,0,0,.25),0 0 0 14px rgba(255,255,255,0)}}
+@media(prefers-reduced-motion:reduce){.btn:before,.btn{animation:none!important}}
+@media(max-width:900px){.menu{display:none}.topbar{font-size:.72rem}}
+@media(max-width:600px){.topbar .spark{display:none}.nav{min-height:68px}.brand-mark{width:40px;height:40px}.brand-text b{font-size:1rem}.brand-text small{font-size:.6rem}.btn.sm{padding:9px 10px 9px 15px;font-size:.84rem}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header id="top">
+ <div class="topbar"><div class="container"><svg class="spark" viewBox="0 0 24 24"><path d="M12 2l2.200 6.800L21 11l-6.800 2.200L12 20l-2.200-6.800L3 11l6.800-2.200z"/></svg><span>Plano prático de 4 semanas para a sua volta ao trabalho</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 2l2.200 6.800L21 11l-6.800 2.200L12 20l-2.200-6.800L3 11l6.800-2.200z"/></svg></div></div>
+ <div class="container nav">
+  <a class="brand" href="#top" aria-label="Volta ao Trabalho Mãe">
+   <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M12 21s-7.500-4.600-9.500-9.200C1.200 8.600 3 5.500 6.200 5.500c2 0 3.200 1 3.800 2.100.6-1.100 1.800-2.100 3.800-2.100 3.200 0 5 3.100 3.700 6.300C19.500 16.400 12 21 12 21z"/></svg></span>
+   <span class="brand-text"><b>Volta ao Trabalho Mãe</b><small>Kit Licença Acabando</small></span>
+  </a>
+  <nav class="menu" aria-label="Principal">
+   <a href="#plano">O plano</a><a href="#conteudo">O kit</a><a href="#faq">Dúvidas</a>
+  </nav>
+  <a class="btn sm" href="#comprar">Conhecer o kit <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+ </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+ <div class="container hero-grid">
+  <div class="reveal">
+   <span class="eyebrow"><svg class="spark" viewBox="0 0 24 24"><path d="M12 2l2.200 6.800L21 11l-6.800 2.200L12 20l-2.200-6.800L3 11l6.800-2.200z"/></svg>Para a fase que está prestes a começar</span>
+   <h1>Sua licença está acabando. <span>Vamos preparar sua volta?</span></h1>
+   <p class="lead">Um plano prático de 4 semanas para ajudar você a organizar os cuidados com o bebê, a rotina da casa e a preparação para o retorno ao trabalho — uma etapa de cada vez.</p>
+   <div class="hero-actions"><a class="btn" href="#comprar">Quero conhecer o kit <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="btn light" href="#conteudo">Ver o que vem dentro</a></div>
+   <div class="trust-line">
+    <span><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Material digital</span>
+    <span><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Celular ou impressão</span>
+    <span><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>No seu ritmo</span>
+   </div>
+  </div>
+  <div class="hero-visual reveal">
+   <div class="photo-frame"></div>
+   <svg class="hero-photo" viewBox="0 0 600 540" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustração de uma mãe abraçando seu bebê em casa">
+    <defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6dbe2"/><stop offset="1" stop-color="#e6eee2"/></linearGradient></defs>
+    <rect width="600" height="540" fill="url(#hg)"/>
+    <circle cx="480" cy="140" r="86" fill="#fff" opacity=".55"/>
+    <circle cx="480" cy="140" r="56" fill="#fff" opacity=".6"/>
+    <path d="M50 540V210a115 115 0 0 1 230 0v330z" fill="#fff" opacity=".5"/>
+    <path d="M165 95v445M50 270h230" stroke="#efd2da" stroke-width="5"/>
+    <rect x="470" y="440" width="76" height="100" rx="12" fill="#c9788c"/>
+    <path d="M508 440c-52-38-64-100-34-156 42 40 54 100 34 156z" fill="#748c78"/>
+    <path d="M508 440c40-30 58-78 40-126-36 30-50 80-40 126z" fill="#8aa38e"/>
+    <path d="M508 440c-20-20-24-52-6-84 22 24 26 56 6 84z" fill="#58705c"/>
+    <path d="M170 540c0-120 52-200 126-200s126 80 126 200z" fill="#9e4e64"/>
+    <rect x="278" y="318" width="36" height="40" rx="14" fill="#efc2a6"/>
+    <circle cx="296" cy="292" r="48" fill="#f3cdb4"/>
+    <path d="M246 296c-10-66 40-92 86-70 26 12 28 44 20 70-10-32-32-48-64-44-24 4-34 20-42 44z" fill="#4a3236"/>
+    <circle cx="282" cy="300" r="3.500" fill="#4a3236"/><circle cx="312" cy="300" r="3.500" fill="#4a3236"/>
+    <path d="M285 316q11 9 22 0" stroke="#b86b7c" stroke-width="3.500" fill="none" stroke-linecap="round"/>
+    <path d="M330 480c8-44 40-66 82-56 32 8 50 40 42 86H330z" fill="#fffaf5"/>
+    <circle cx="398" cy="408" r="32" fill="#f6d6c0"/>
+    <path d="M370 400c6-22 38-30 56-8-18-8-38-6-56 8z" fill="#8a6a5c"/>
+    <circle cx="388" cy="412" r="2.500" fill="#4a3236"/><circle cx="408" cy="412" r="2.500" fill="#4a3236"/>
+    <path d="M388 424q10 7 20 0" stroke="#c9788c" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M232 470c46 34 130 32 188-16" stroke="#7d3a4e" stroke-width="34" fill="none" stroke-linecap="round"/>
+    <g fill="#c9a36a" opacity=".8"><path d="M90 400l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/><path d="M540 320l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/></g>
+   </svg>
+   <div class="photo-tint"></div>
+   <div class="kit-chip"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 5.500A2.500 2.500 0 0 1 6.500 3H20v16H6.500A2.500 2.500 0 0 0 4 21.500z"/><path d="M4 21.500V5.500"/></svg></span><div><b>Kit completo</b><small>4 materiais em 1</small></div></div>
+   <div class="floating-card"><span class="mini-label">Seu próximo passo</span><strong>Você não precisa resolver tudo hoje.</strong><p>Comece com um plano possível para a sua realidade.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+ <div class="container">
+  <div class="stats-row reveal">
+   <div class="stat"><b>20</b><span>capítulos no ebook</span></div>
+   <div class="stat"><b>4</b><span>semanas de plano</span></div>
+   <div class="stat"><b>4</b><span>materiais no kit</span></div>
+   <div class="stat"><b>100%</b><span>digital e imprimível</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- PAIN -->
+<section class="section">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">A gente sabe que essa fase mexe com muita coisa</div><h2>Muitas perguntas chegam <em>junto</em> com o fim da licença.</h2><p class="muted">E talvez você esteja tentando pensar em tudo ao mesmo tempo. O primeiro passo é tirar as preocupações da cabeça e transformar o que for possível em um plano.</p></div>
+  <div class="pain-grid">
+   <article class="pain-card reveal"><div class="pain-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.400 3.600-7 8-7s8 2.600 8 7"/></svg></div><h3>Quem vai cuidar do meu bebê?</h3><p>Organize os cuidados, os combinados e as informações importantes para quem ficará com ele.</p></article>
+   <article class="pain-card reveal"><div class="pain-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Como vou dar conta da rotina?</h3><p>Pense nos horários, nas tarefas da casa e no que pode ser simplificado ou dividido.</p></article>
+   <article class="pain-card reveal"><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7.500-4.600-9.500-9.200C1.200 8.600 3 5.500 6.200 5.500c2 0 3.200 1 3.800 2.100.6-1.100 1.800-2.100 3.800-2.100 3.200 0 5 3.100 3.700 6.300C19.500 16.400 12 21 12 21z"/></svg></div><h3>E se eu não me sentir pronta?</h3><p>Reserve espaço para reconhecer suas preocupações e decidir qual será o próximo passo possível.</p></article>
+  </div>
+  <div class="quote-band reveal">
+   <svg viewBox="0 0 500 270" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustração de uma sala acolhedora com luz natural">
+    <defs><linearGradient id="qg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ede1"/><stop offset="1" stop-color="#cfdccb"/></linearGradient></defs>
+    <rect width="500" height="270" fill="url(#qg)"/>
+    <rect x="70" y="30" width="150" height="150" rx="75" ry="75" fill="#fffdfb" opacity=".85"/>
+    <circle cx="145" cy="95" r="34" fill="#f8e3b8"/>
+    <path d="M145 30v150M70 105h150" stroke="#cfdccb" stroke-width="4"/>
+    <rect x="40" y="170" width="300" height="70" rx="22" fill="#c9788c"/>
+    <rect x="40" y="140" width="300" height="60" rx="26" fill="#d98fa2"/>
+    <rect x="70" y="150" width="70" height="50" rx="16" fill="#fff" opacity=".85"/>
+    <rect x="260" y="156" width="60" height="44" rx="14" fill="#f8e8ec"/>
+    <rect x="40" y="236" width="300" height="8" rx="4" fill="#9e4e64" opacity=".4"/>
+    <rect x="400" y="170" width="46" height="70" rx="8" fill="#9e4e64"/>
+    <path d="M423 170c-40-30-48-80-24-120 34 30 44 80 24 120z" fill="#58705c"/>
+    <path d="M423 170c34-24 46-62 30-102-30 24-42 64-30 102z" fill="#748c78"/>
+   </svg>
+   <blockquote>“Sua volta começa antes do primeiro dia. <span>Um passo de cada vez</span> já é preparação.”</blockquote>
+  </div>
+ </div>
+</section>
+
+<!-- FOR WHOM -->
+<section class="section soft">
+ <div class="container who">
+  <svg class="reveal" viewBox="0 0 500 440" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustração de um bebê tranquilo no berço com móbile de estrelas">
+   <defs><linearGradient id="wg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8e0e6"/><stop offset="1" stop-color="#e9efe5"/></linearGradient></defs>
+   <rect width="500" height="440" fill="url(#wg)"/>
+   <circle cx="400" cy="90" r="60" fill="#fff" opacity=".6"/>
+   <path d="M120 40h260" stroke="#9e4e64" stroke-width="5" stroke-linecap="round"/>
+   <g stroke="#c9a36a" stroke-width="2"><path d="M160 42v60M250 42v90M340 42v50"/></g>
+   <path d="M160 102l8 16 17 3-12 12 3 17-16-8-16 8 3-17-12-12 17-3z" fill="#c9a36a"/>
+   <circle cx="250" cy="146" r="18" fill="#c9788c"/>
+   <path d="M340 92l8 16 17 3-12 12 3 17-16-8-16 8 3-17-12-12 17-3z" fill="#748c78"/>
+   <g stroke="#fff" stroke-width="8" stroke-linecap="round"><path d="M70 230v170M120 230v170M170 230v170M220 230v170M270 230v170M320 230v170M370 230v170M420 230v170"/><path d="M60 230h370M60 400h370"/></g>
+   <rect x="80" y="320" width="340" height="80" rx="30" fill="#f0c7d1"/>
+   <circle cx="250" cy="300" r="46" fill="#f6d6c0"/>
+   <path d="M208 292c6-34 70-40 84 0-24-14-60-14-84 0z" fill="#8a6a5c"/>
+   <circle cx="234" cy="304" r="3" fill="#4a3236"/><circle cx="266" cy="304" r="3" fill="#4a3236"/>
+   <path d="M240 322q10 8 20 0" stroke="#c9788c" stroke-width="3.500" fill="none" stroke-linecap="round"/>
+   <rect x="100" y="344" width="300" height="56" rx="24" fill="#fff"/>
+   <g stroke="#c9788c" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"><path d="M130 372c10-10 20-10 30 0s20 10 30 0 20-10 30 0 20 10 30 0 20-10 30 0 20 10 30 0"/></g>
+  </svg>
+  <div class="reveal">
+   <div class="kicker">Para quem é</div>
+   <h2>Pensado para a mãe que quer <em>chegar mais preparada</em>.</h2>
+   <p class="muted">O kit foi criado para quem está perto de voltar ao trabalho e quer transformar a ansiedade em organização.</p>
+   <ul>
+    <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>Está nos últimos meses ou semanas da licença-maternidade.</span></li>
+    <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>Precisa definir quem ajudará nos cuidados com o bebê.</span></li>
+    <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>Quer organizar a rotina da casa antes do primeiro dia de volta.</span></li>
+    <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>Prefere um passo a passo simples a se sentir sobrecarregada com tudo ao mesmo tempo.</span></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<!-- WEEKS -->
+<section class="section" id="plano">
+ <div class="container">
+  <div class="section-head center reveal"><div class="kicker">Um plano que cabe na vida real</div><h2>Quatro semanas. <em>Quatro etapas.</em></h2><p>Use o roteiro como ponto de partida e adapte o que for necessário à sua rotina, ao seu trabalho e às necessidades do seu bebê.</p></div>
+  <div class="weeks">
+   <article class="week reveal"><span class="week-num">01</span><span class="week-no">Semana 01</span><h3>Organizar</h3><p>Liste preocupações, prioridades, pendências e pessoas que podem ajudar.</p></article>
+   <article class="week reveal"><span class="week-num">02</span><span class="week-no">Semana 02</span><h3>Preparar</h3><p>Revise os cuidados com o bebê, a bolsa, os horários e a divisão de tarefas.</p></article>
+   <article class="week reveal"><span class="week-num">03</span><span class="week-no">Semana 03</span><h3>Testar</h3><p>Quando possível, simule a rotina e observe o que precisa ser ajustado.</p></article>
+   <article class="week reveal"><span class="week-num">04</span><span class="week-no">Semana 04</span><h3>Ajustar</h3><p>Confira os preparativos, planeje o primeiro dia e pense em alternativas.</p></article>
+  </div>
+ </div>
+</section>
+
+<!-- KIT SHOWCASE -->
+<section class="section showcase" id="conteudo">
+ <div class="container">
+  <div class="section-head center reveal"><div class="kicker">Conheça o material</div><h2>O que você recebe no <em>Kit Licença Acabando</em>?</h2><p>Materiais complementares para ajudar você a organizar ideias e colocar o plano em prática.</p></div>
+
+  <div class="books reveal" aria-label="Ilustração dos materiais do kit">
+   <div class="book b1">
+    <div><small>Cartilha</small></div>
+    <svg viewBox="0 0 24 24"><path d="M4 20h4l10-10-4-4L4 16z"/><path d="M13 7l4 4"/></svg>
+    <div><strong>Minha Volta ao Trabalho</strong><div class="tag">Para preencher e consultar</div></div>
+   </div>
+   <div class="book b2">
+    <div><small>Ebook · 20 capítulos</small></div>
+    <svg viewBox="0 0 24 24"><path d="M4 5.500A2.500 2.500 0 0 1 6.500 3H20v16H6.500A2.500 2.500 0 0 0 4 21.500z"/><path d="M4 21.500V5.500"/></svg>
+    <div><strong>Volta ao Trabalho</strong><div class="tag">Rotina, cuidados e adaptação</div></div>
+   </div>
+   <div class="book b3">
+    <div><small>Plano · 4 semanas</small></div>
+    <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    <div><strong>Organizar, Preparar, Testar, Ajustar</strong><div class="tag">Roteiro semana a semana</div></div>
+   </div>
+  </div>
+
+  <div class="includes">
+   <div class="include reveal"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><h3>Ebook Volta ao Trabalho</h3><p>20 capítulos sobre preparação emocional, rotina, cuidados com o bebê, trabalho e adaptação.</p></div></div>
+   <div class="include reveal"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><h3>Cartilha Minha Volta ao Trabalho</h3><p>Páginas para registrar decisões, mapear apoios e organizar sua rotina.</p></div></div>
+   <div class="include reveal"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><h3>Plano das 4 Semanas</h3><p>Um roteiro organizado em: organizar, preparar, testar e ajustar.</p></div></div>
+   <div class="include reveal"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><h3>Exercícios e checklists</h3><p>Atividades guiadas e listas para acompanhar o que já está encaminhado e o que ainda falta.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section soft">
+ <div class="container">
+  <div class="section-head center reveal"><div class="kicker">Feito para apoiar, não cobrar perfeição</div><h2>Mais organização para decidir o <em>próximo passo</em>.</h2></div>
+  <div class="benefits">
+   <div class="benefit reveal"><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M4 20h4l10-10-4-4L4 16z"/><path d="M13 7l4 4"/></svg></div><strong>Tire as ideias da cabeça</strong><p>Use perguntas e exercícios para registrar preocupações e transformar algumas delas em ações.</p></div>
+   <div class="benefit reveal"><div class="pain-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="17" cy="9" r="3"/><path d="M2 20c0-3 2.500-5 6-5s6 2 6 5M14 15.300c.9-.2 1.900-.3 3-.3 3 0 5 1.700 5 5"/></svg></div><strong>Combine a rotina com sua rede</strong><p>Organize tarefas e responsabilidades com as pessoas envolvidas nos cuidados e na casa.</p></div>
+   <div class="benefit reveal"><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 12C12 8 9 5.500 5 5.500 5 9.500 7.500 12 12 12z"/><path d="M12 14c0-3.500 2.500-6 7-6 0 4-2.500 6-7 6z"/></svg></div><strong>Adapte ao que funciona para você</strong><p>Marque o que foi feito, ajuste o que mudou e deixe de lado o que não se aplica à sua família.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- PRICE -->
+<section class="section price-section" id="comprar">
+ <div class="container price-layout">
+  <div class="price-img reveal"><svg viewBox="0 0 500 540" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustração de uma mesa com caderno de planejamento, caneta, xícara e planta">
+    <defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e2e7"/><stop offset="1" stop-color="#e5ece1"/></linearGradient></defs>
+    <rect width="500" height="540" fill="url(#pg)"/>
+    <rect y="360" width="500" height="180" fill="#e9d6c3" opacity=".7"/>
+    <g transform="rotate(-4 250 300)">
+     <rect x="70" y="150" width="360" height="250" rx="14" fill="#9e4e64"/>
+     <rect x="80" y="140" width="165" height="250" rx="10" fill="#fffdfb"/>
+     <rect x="255" y="140" width="165" height="250" rx="10" fill="#fffdfb"/>
+     <g stroke="#eadfe0" stroke-width="3" stroke-linecap="round"><path d="M100 190h120M100 220h120M100 250h120M100 280h120M275 250h120M275 280h120M275 310h90"/></g>
+     <text x="275" y="185" font-family="Playfair Display,Georgia,serif" font-size="26" fill="#9e4e64" font-weight="600">4 semanas</text>
+     <g fill="none" stroke="#748c78" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M100 196l8 8 14-16M100 226l8 8 14-16M100 256l8 8 14-16"/></g>
+     <circle cx="320" cy="215" r="9" fill="none" stroke="#c9788c" stroke-width="3"/><circle cx="352" cy="215" r="9" fill="none" stroke="#c9788c" stroke-width="3"/><circle cx="384" cy="215" r="9" fill="#c9788c"/>
+    </g>
+    <g transform="rotate(32 410 430)"><rect x="330" y="420" width="170" height="14" rx="7" fill="#c9a36a"/><path d="M330 420l-24 7 24 7z" fill="#4a3236"/></g>
+    <ellipse cx="110" cy="470" rx="56" ry="14" fill="#fff" opacity=".7"/>
+    <rect x="62" y="420" width="96" height="52" rx="14" fill="#fff"/>
+    <path d="M158 432c30 0 30 30 0 30" stroke="#fff" stroke-width="9" fill="none"/>
+    <rect x="62" y="420" width="96" height="14" rx="7" fill="#c9788c" opacity=".5"/>
+    <g stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".7"><path d="M92 396c-8-14 8-18 0-32M122 396c-8-14 8-18 0-32"/></g>
+    <rect x="410" y="60" width="56" height="70" rx="10" fill="#c9788c"/>
+    <path d="M438 60c-40-24-48-56-26-86 32 22 40 54 26 86z" fill="#748c78"/>
+    <path d="M438 60c30-18 42-48 28-78-26 18-36 48-28 78z" fill="#58705c"/>
+   </svg></div>
+  <div class="price-card reveal">
+   <span class="ribbon">Kit completo</span>
+   <div class="label">Kit digital</div>
+   <h2 style="font-size:2.1rem;margin:12px 0">Prepare sua volta <em>um passo de cada vez.</em></h2>
+   <p class="muted">Tenha os materiais reunidos para consultar e preencher no seu ritmo.</p>
+   <div class="price"><small>R$</small>19,90</div>
+   <p class="muted" style="font-size:.88rem;margin:0">Pagamento único • Material digital</p>
+   <ul>
+    <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Ebook com 20 capítulos</li>
+    <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Cartilha prática</li>
+    <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Plano de preparação de 4 semanas</li>
+    <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Exercícios e checklists</li>
+   </ul>
+   <!-- IMPORTANTE: substitua o endereço provisório pelo link verdadeiro do checkout Kiwify. -->
+   <a class="btn" href="https://pay.kiwify.com.br/COLOQUE-SEU-LINK" target="_blank" rel="noopener">Quero meu kit digital <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+   <div class="secure"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Você finaliza a compra no checkout do vendedor</div>
+   <p class="small-note">O botão ainda precisa ser conectado ao checkout real antes de publicar esta página.</p>
+   <p class="small-note">Material educativo e de organização pessoal. Não substitui orientação profissional individual quando necessária.</p>
+  </div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+ <div class="container faq">
+  <div class="section-head center reveal"><div class="kicker">Antes de comprar</div><h2>Dúvidas <em>frequentes</em></h2><p>Informações para você saber o que esperar do material.</p></div>
+  <details><summary>Como recebo os arquivos?</summary><p>Os materiais são digitais. A entrega deve ser configurada na plataforma para que a cliente receba as instruções e os arquivos após a confirmação do pagamento.</p></details>
+  <details><summary>Preciso imprimir tudo?</summary><p>Não. Você pode consultar o material no celular ou computador e imprimir somente as páginas que quiser preencher à mão.</p></details>
+  <details><summary>E se faltarem menos de quatro semanas para eu voltar?</summary><p>Use o plano de forma flexível. Priorize as atividades mais importantes para sua realidade e adapte a sequência ao tempo disponível.</p></details>
+  <details><summary>O kit garante que minha adaptação será fácil?</summary><p>Não é possível garantir como será a adaptação. O objetivo é ajudar você a organizar decisões e pensar em alternativas antes do retorno.</p></details>
+  <details><summary>Como funcionam reembolso e suporte?</summary><p>Confira as condições de compra, reembolso e atendimento informadas pelo vendedor e exibidas no checkout antes de finalizar o pedido.</p></details>
+ </div>
+</section>
+
+<!-- LAST CTA -->
+<section class="last-cta">
+ <svg class="bg" viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="#fff"><circle cx="180" cy="120" r="150" opacity=".35"/><circle cx="1420" cy="380" r="210" opacity=".28"/><circle cx="820" cy="60" r="90" opacity=".25"/><circle cx="1180" cy="90" r="46" opacity=".4"/><circle cx="420" cy="420" r="70" opacity=".3"/></g><g fill="#c9a36a" opacity=".6"><path d="M300 300l8 18 18 8-18 8-8 18-8-18-18-8 18-8z"/><path d="M1300 160l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/></g></svg>
+ <div class="container reveal"><div class="kicker">Sua próxima fase começa com um passo possível</div><h2>Você não precisa ter tudo <em style="color:#fff">resolvido hoje.</em></h2><p>Comece organizando o que está ao seu alcance e construa um plano que faça sentido para você e sua família.</p><a class="btn" href="#comprar">Conhecer o Kit Licença Acabando <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+</section>
+</main>
+
+<footer><div class="container footer-row"><div><strong>Volta ao Trabalho Mãe</strong><p>Produto digital de apoio ao planejamento da volta ao trabalho após a licença-maternidade.</p><p>Antes de publicar, inclua os dados de contato do vendedor e confira os termos de compra, privacidade e reembolso aplicáveis.</p></div><div>© 2026 Volta ao Trabalho Mãe</div></div></footer>
+
+<div class="mobile-cta" id="mcta"><div><small class="muted">Kit digital</small><br><b>R$ 19,90</b></div><a class="btn sm" href="#comprar">Quero meu kit <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+
+<script>
+(function(){
+ var els=document.querySelectorAll('.reveal');
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(el){io.observe(el)});
+ }else{els.forEach(function(el){el.classList.add('in')})}
+ var bar=document.getElementById('mcta'),price=document.getElementById('comprar');
+ function t(){
+  var y=window.scrollY,r=price.getBoundingClientRect();
+  var inPrice=r.top<window.innerHeight*.6&&r.bottom>0;
+  bar.classList.toggle('show',y>600&&!inPrice);
+ }
+ window.addEventListener('scroll',t,{passive:true});t();
+})();
+</script>
+</body>
+</html>
