@@ -290,6 +290,18 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
  .hero .trust-line{font-size:.78rem;gap:8px 12px}
 }
 
+
+/* photographic replacements for the three remaining visual mockups */
+.quote-band img{height:270px;width:100%;object-fit:cover;border-radius:20px}
+.who img{width:100%;height:440px;object-fit:cover;border-radius:26px;box-shadow:var(--shadow)}
+.kit-photo{position:relative;overflow:hidden;margin:0 auto 46px;border-radius:28px;max-width:1000px;box-shadow:var(--shadow);background:#eee6df}
+.kit-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:center 55%}
+.kit-photo-caption{position:absolute;left:24px;bottom:24px;max-width:420px;padding:20px 24px;background:rgba(255,253,251,.95);border:1px solid rgba(255,255,255,.9);border-radius:18px;box-shadow:var(--shadow-sm)}
+.kit-photo-caption strong{display:block;font-family:"Playfair Display",Georgia,serif;font-size:1.35rem;line-height:1.2;color:var(--rose-deep);margin-bottom:6px}
+.kit-photo-caption span{display:block;color:var(--muted);font-size:.9rem}
+@media(max-width:900px){.who img{height:360px}.kit-photo img{height:360px}}
+@media(max-width:600px){.quote-band img{height:250px}.who img{height:320px}.kit-photo img{height:300px}.kit-photo-caption{left:12px;right:12px;bottom:12px;padding:14px 16px}.kit-photo-caption strong{font-size:1.1rem}.kit-photo-caption span{font-size:.82rem}}
+
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -351,21 +363,7 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
    <article class="pain-card reveal"><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7.500-4.600-9.500-9.200C1.200 8.600 3 5.500 6.200 5.500c2 0 3.200 1 3.800 2.100.6-1.100 1.800-2.100 3.800-2.100 3.200 0 5 3.100 3.700 6.300C19.500 16.400 12 21 12 21z"/></svg></div><h3>E se eu não me sentir pronta?</h3><p>Reserve espaço para reconhecer suas preocupações e decidir qual será o próximo passo possível.</p></article>
   </div>
   <div class="quote-band reveal">
-   <svg viewBox="0 0 500 270" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustração de uma sala acolhedora com luz natural">
-    <defs><linearGradient id="qg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ede1"/><stop offset="1" stop-color="#cfdccb"/></linearGradient></defs>
-    <rect width="500" height="270" fill="url(#qg)"/>
-    <rect x="70" y="30" width="150" height="150" rx="75" ry="75" fill="#fffdfb" opacity=".85"/>
-    <circle cx="145" cy="95" r="34" fill="#f8e3b8"/>
-    <path d="M145 30v150M70 105h150" stroke="#cfdccb" stroke-width="4"/>
-    <rect x="40" y="170" width="300" height="70" rx="22" fill="#c9788c"/>
-    <rect x="40" y="140" width="300" height="60" rx="26" fill="#d98fa2"/>
-    <rect x="70" y="150" width="70" height="50" rx="16" fill="#fff" opacity=".85"/>
-    <rect x="260" y="156" width="60" height="44" rx="14" fill="#f8e8ec"/>
-    <rect x="40" y="236" width="300" height="8" rx="4" fill="#9e4e64" opacity=".4"/>
-    <rect x="400" y="170" width="46" height="70" rx="8" fill="#9e4e64"/>
-    <path d="M423 170c-40-30-48-80-24-120 34 30 44 80 24 120z" fill="#58705c"/>
-    <path d="M423 170c34-24 46-62 30-102-30 24-42 64-30 102z" fill="#748c78"/>
-   </svg>
+   <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=85" alt="Ambiente doméstico acolhedor com luz natural, representando uma rotina mais organizada" loading="lazy" decoding="async">
    <blockquote>“Sua volta começa antes do primeiro dia. <span>Um passo de cada vez</span> já é preparação.”</blockquote>
   </div>
  </div>
@@ -374,24 +372,7 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
 <!-- FOR WHOM -->
 <section class="section soft">
  <div class="container who">
-  <svg class="reveal" viewBox="0 0 500 440" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustração de um bebê tranquilo no berço com móbile de estrelas">
-   <defs><linearGradient id="wg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8e0e6"/><stop offset="1" stop-color="#e9efe5"/></linearGradient></defs>
-   <rect width="500" height="440" fill="url(#wg)"/>
-   <circle cx="400" cy="90" r="60" fill="#fff" opacity=".6"/>
-   <path d="M120 40h260" stroke="#9e4e64" stroke-width="5" stroke-linecap="round"/>
-   <g stroke="#c9a36a" stroke-width="2"><path d="M160 42v60M250 42v90M340 42v50"/></g>
-   <path d="M160 102l8 16 17 3-12 12 3 17-16-8-16 8 3-17-12-12 17-3z" fill="#c9a36a"/>
-   <circle cx="250" cy="146" r="18" fill="#c9788c"/>
-   <path d="M340 92l8 16 17 3-12 12 3 17-16-8-16 8 3-17-12-12 17-3z" fill="#748c78"/>
-   <g stroke="#fff" stroke-width="8" stroke-linecap="round"><path d="M70 230v170M120 230v170M170 230v170M220 230v170M270 230v170M320 230v170M370 230v170M420 230v170"/><path d="M60 230h370M60 400h370"/></g>
-   <rect x="80" y="320" width="340" height="80" rx="30" fill="#f0c7d1"/>
-   <circle cx="250" cy="300" r="46" fill="#f6d6c0"/>
-   <path d="M208 292c6-34 70-40 84 0-24-14-60-14-84 0z" fill="#8a6a5c"/>
-   <circle cx="234" cy="304" r="3" fill="#4a3236"/><circle cx="266" cy="304" r="3" fill="#4a3236"/>
-   <path d="M240 322q10 8 20 0" stroke="#c9788c" stroke-width="3.500" fill="none" stroke-linecap="round"/>
-   <rect x="100" y="344" width="300" height="56" rx="24" fill="#fff"/>
-   <g stroke="#c9788c" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"><path d="M130 372c10-10 20-10 30 0s20 10 30 0 20-10 30 0 20 10 30 0 20-10 30 0 20 10 30 0"/></g>
-  </svg>
+  <img class="reveal" src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1200&q=85" alt="Momento tranquilo de cuidado e aconchego com bebê" loading="lazy" decoding="async">
   <div class="reveal">
    <div class="kicker">Para quem é</div>
    <h2>Pensado para a mãe que quer <em>chegar mais preparada</em>.</h2>
@@ -424,25 +405,9 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
  <div class="container">
   <div class="section-head center reveal"><div class="kicker">Conheça o material</div><h2>O que você recebe no <em>Kit Licença Acabando</em>?</h2><p>Materiais complementares para ajudar você a organizar ideias e colocar o plano em prática.</p></div>
 
-  <div class="books reveal" aria-label="Ilustração dos materiais do kit">
-   <div class="book b1">
-    <div><small>Cartilha</small></div>
-    <svg viewBox="0 0 24 24"><path d="M4 20h4l10-10-4-4L4 16z"/><path d="M13 7l4 4"/></svg>
-    <div><strong>Minha Volta ao Trabalho</strong><div class="tag">Para preencher e consultar</div></div>
-   </div>
-   <div class="book b2">
-    <div><small>Ebook · 20 capítulos</small></div>
-    <svg viewBox="0 0 24 24"><path d="M4 5.500A2.500 2.500 0 0 1 6.500 3H20v16H6.500A2.500 2.500 0 0 0 4 21.500z"/><path d="M4 21.500V5.500"/></svg>
-    <div><strong>Volta ao Trabalho</strong><div class="tag">Rotina, cuidados e adaptação</div></div>
-   </div>
-   <div class="book b3">
-    <div><small>Plano · 4 semanas</small></div>
-    <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-    <div><strong>Organizar, Preparar, Testar, Ajustar</strong><div class="tag">Roteiro semana a semana</div></div>
-   </div>
-  </div>
+  <div class="kit-photo reveal" aria-label="Materiais de planejamento organizados sobre uma mesa"><img src="https://images.unsplash.com/photo-1455390582262-044c dead8028?auto=format&fit=crop&w=1600&q=85" alt="Caderno, agenda e materiais de planejamento organizados sobre uma mesa clara" loading="lazy" decoding="async"><div class="kit-photo-caption"><strong>Um kit para consultar e colocar em prática</strong><span>Ebook, cartilha, plano de quatro semanas e checklists digitais</span></div></div>
 
-  <div class="includes">
+   <div class="includes">
    <div class="include reveal"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><h3>Ebook Volta ao Trabalho</h3><p>20 capítulos sobre preparação emocional, rotina, cuidados com o bebê, trabalho e adaptação.</p></div></div>
    <div class="include reveal"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><h3>Cartilha Minha Volta ao Trabalho</h3><p>Páginas para registrar decisões, mapear apoios e organizar sua rotina.</p></div></div>
    <div class="include reveal"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><h3>Plano das 4 Semanas</h3><p>Um roteiro organizado em: organizar, preparar, testar e ajustar.</p></div></div>
