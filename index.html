@@ -302,6 +302,23 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
 @media(max-width:900px){.who img{height:360px}.kit-photo img{height:360px}}
 @media(max-width:600px){.quote-band img{height:250px}.who img{height:320px}.kit-photo img{height:300px}.kit-photo-caption{left:12px;right:12px;bottom:12px;padding:14px 16px}.kit-photo-caption strong{font-size:1.1rem}.kit-photo-caption span{font-size:.82rem}}
 
+
+/* sales letter: empathy, practical steps and honest expectations */
+.letter-section{background:#fffdfb}
+.letter-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}
+.letter-copy p{color:#62575a}
+.letter-copy p strong{color:var(--rose-deep)}
+.letter-copy .btn{margin-top:10px}
+.letter-steps{padding:28px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,#fff,#f7f0eb);box-shadow:var(--shadow-sm)}
+.letter-step{display:flex;gap:16px;align-items:flex-start;padding:17px 0}
+.letter-step>span{display:grid;place-items:center;flex:0 0 42px;height:42px;border-radius:14px;background:var(--rose-light);color:var(--rose-deep);font-family:"Playfair Display",Georgia,serif;font-size:1.3rem;font-weight:700}
+.letter-step strong{display:block;margin:1px 0 5px;font-size:1rem}
+.letter-step p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.55}
+.letter-arrow{text-align:center;color:var(--sage-deep);font-size:1.35rem;line-height:1}
+.letter-disclaimer{font-size:.78rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin:10px 0 0}
+@media(max-width:900px){.letter-grid{grid-template-columns:1fr;gap:30px}.letter-steps{max-width:680px}}
+@media(max-width:600px){.letter-grid{gap:24px}.letter-steps{padding:18px}.letter-step{gap:12px}.letter-step>span{flex-basis:36px;height:36px}}
+
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -310,7 +327,7 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
  <div class="topbar"><div class="container"><svg class="spark" viewBox="0 0 24 24"><path d="M12 2l2.200 6.800L21 11l-6.800 2.200L12 20l-2.200-6.800L3 11l6.800-2.200z"/></svg><span>Plano prático de 4 semanas para a sua volta ao trabalho</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 2l2.200 6.800L21 11l-6.800 2.200L12 20l-2.200-6.800L3 11l6.800-2.200z"/></svg></div></div>
  <div class="container nav">
     <nav class="menu" aria-label="Principal">
-   <a href="#plano">O plano</a><a href="#conteudo">O kit</a><a href="#faq">Dúvidas</a>
+   <a href="#plano">O plano</a><a href="#conteudo">O kit</a><a href="#como-ajuda">Como ajuda</a><a href="#faq">Dúvidas</a>
   </nav>
   <a class="btn sm" href="#comprar">Conhecer o kit <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
  </div>
@@ -428,6 +445,31 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
  </div>
 </section>
 
+
+<!-- SALES LETTER / REALISTIC TRANSFORMATION -->
+<section class="section letter-section" id="como-ajuda">
+ <div class="container letter-grid">
+  <div class="letter-copy reveal">
+   <div class="kicker">Você também merece se preparar</div>
+   <h2>Você pode amar seu bebê e, ainda assim, sentir medo de <em>voltar ao trabalho.</em></h2>
+   <p>Talvez você esteja feliz com a retomada da vida profissional e, ao mesmo tempo, preocupada com a separação, os horários, os cuidados com o bebê e tudo o que precisa funcionar quando a rotina recomeçar.</p>
+   <p>Esses sentimentos podem coexistir. E você não precisa ter todas as respostas de uma vez.</p>
+   <p>Quando muitas decisões ficam apenas na cabeça, até as tarefas simples podem parecer maiores. Colocar as preocupações no papel ajuda a enxergar prioridades, conversar com quem pode ajudar e decidir qual é o próximo passo.</p>
+   <p>Foi para apoiar essa organização que o Kit Licença Acabando reúne um ebook, uma cartilha, um plano de quatro semanas e checklists em um só lugar.</p>
+   <p><strong>Não é uma promessa de que tudo será perfeito.</strong> É um roteiro prático para você adaptar à sua realidade, no seu ritmo, sem transformar a preparação em mais uma cobrança.</p>
+   <a class="btn" href="#comprar">Quero conhecer o kit <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  </div>
+  <div class="letter-steps reveal">
+   <div class="letter-step"><span>01</span><div><strong>Antes: tudo parece estar na cabeça</strong><p>Preocupações, horários, tarefas e decisões misturados.</p></div></div>
+   <div class="letter-arrow" aria-hidden="true">↓</div>
+   <div class="letter-step"><span>02</span><div><strong>Durante: você organiza por etapas</strong><p>Registra o que importa, conversa com sua rede de apoio e define prioridades.</p></div></div>
+   <div class="letter-arrow" aria-hidden="true">↓</div>
+   <div class="letter-step"><span>03</span><div><strong>Depois: um próximo passo mais claro</strong><p>Um plano inicial que pode ser ajustado quando a vida real pedir mudanças.</p></div></div>
+   <p class="letter-disclaimer">Cada família vive essa transição de um jeito. O kit é um recurso de organização, não uma garantia de resultado específico.</p>
+  </div>
+ </div>
+</section>
+
 <!-- PRICE -->
 <section class="section price-section" id="comprar">
  <div class="container price-layout">
@@ -480,11 +522,12 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
 <section class="section" id="faq">
  <div class="container faq">
   <div class="section-head center reveal"><div class="kicker">Antes de comprar</div><h2>Dúvidas <em>frequentes</em></h2><p>Informações para você saber o que esperar do material.</p></div>
-  <details><summary>Como recebo os arquivos?</summary><p>Os materiais são digitais. A entrega deve ser configurada na plataforma para que a cliente receba as instruções e os arquivos após a confirmação do pagamento.</p></details>
+  <details><summary>Como recebo os arquivos?</summary><p>O kit é digital. Antes de concluir a compra, confira no checkout as informações de entrega e acesso. Após a confirmação do pagamento, siga as instruções fornecidas pela plataforma para acessar os materiais.</p></details>
   <details><summary>Preciso imprimir tudo?</summary><p>Não. Você pode consultar o material no celular ou computador e imprimir somente as páginas que quiser preencher à mão.</p></details>
   <details><summary>E se faltarem menos de quatro semanas para eu voltar?</summary><p>Use o plano de forma flexível. Priorize as atividades mais importantes para sua realidade e adapte a sequência ao tempo disponível.</p></details>
   <details><summary>O kit garante que minha adaptação será fácil?</summary><p>Não é possível garantir como será a adaptação. O objetivo é ajudar você a organizar decisões e pensar em alternativas antes do retorno.</p></details>
-  <details><summary>Como funcionam reembolso e suporte?</summary><p>Confira as condições de compra, reembolso e atendimento informadas pelo vendedor e exibidas no checkout antes de finalizar o pedido.</p></details>
+  <details><summary>Existe garantia ou possibilidade de reembolso?</summary><p>As condições e os prazos de reembolso aplicáveis são os informados pelo vendedor no checkout. Leia essas condições antes de finalizar a compra; não anunciamos um prazo de garantia nesta página sem confirmação das regras da oferta.</p></details>
+  <details><summary>Como tiro dúvidas sobre a compra?</summary><p>Consulte os canais de atendimento e os dados do vendedor apresentados no checkout da compra. Guarde também as informações de confirmação do pedido.</p></details>
  </div>
 </section>
 
@@ -495,7 +538,7 @@ header{background:rgba(255,252,249,.96);backdrop-filter:blur(18px) saturate(1.15
 </section>
 </main>
 
-<footer><div class="container footer-row"><div><strong>Volta ao Trabalho Mãe</strong><p>Produto digital de apoio ao planejamento da volta ao trabalho após a licença-maternidade.</p><p>Antes de publicar, inclua os dados de contato do vendedor e confira os termos de compra, privacidade e reembolso aplicáveis.</p></div><div>© 2026 Volta ao Trabalho Mãe</div></div></footer>
+<footer><div class="container footer-row"><div><strong>Volta ao Trabalho Mãe</strong><p>Produto digital de apoio ao planejamento da volta ao trabalho após a licença-maternidade.</p><p>Antes de concluir a compra, confira as informações do vendedor, as condições de entrega e as regras de reembolso apresentadas no checkout.</p></div><div>© 2026 Volta ao Trabalho Mãe</div></div></footer>
 
 <div class="mobile-cta" id="mcta"><div><small class="muted">Kit digital</small><br><b>R$ 19,90</b></div><a class="btn sm" href="https://pay.kiwify.com.br/17afmRx" target="_blank" rel="noopener">Quero meu kit <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
 
