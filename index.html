@@ -482,8 +482,8 @@ header{border-bottom:2px solid rgba(212,169,80,.55)!important}
  if(!/^\d{8,20}$/.test(PIXEL_ID))return; /* enquanto não trocar o ID, nada é enviado */
  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
  fbq('init',PIXEL_ID);fbq('track','PageView');
- /* clique em qualquer botão que leva ao checkout da Kiwify = InitiateCheckout */
- document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="kiwify"]');if(a)fbq('track','InitiateCheckout',{value:19.90,currency:'BRL',content_name:'Kit Licença Acabando'})},true);
+ /* clique em qualquer botão que leva ao checkout da Hotmart = InitiateCheckout */
+ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="hotmart"]');if(a)fbq('track','InitiateCheckout',{value:19.90,currency:'BRL',content_name:'Kit Licença Acabando'})},true);
  /* ao chegar na seção do preço = ViewContent (uma vez) */
  var p=document.getElementById('comprar');if(p&&'IntersectionObserver'in window){var o=new IntersectionObserver(function(en){if(en[0].isIntersecting){fbq('track','ViewContent',{content_name:'Kit Licença Acabando',value:19.90,currency:'BRL'});o.disconnect()}},{threshold:.4});o.observe(p)}
 })();
@@ -928,7 +928,7 @@ body{font-family:&#x27;DM Sans&#x27;,Arial,sans-serif;color:var(--ink);-webkit-f
      </div>
     </div>
 
-    <a class="btn" href="https://pay.kiwify.com.br/17afmRx" target="_blank" rel="noopener">Quero meu kit digital <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a class="btn" href="https://pay.hotmart.com/L108396298Q?off=2y7ptyxe" target="_blank" rel="noopener">Quero meu kit digital <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
    <div class="secure"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Você finaliza a compra no checkout do vendedor</div>
    
    <p class="small-note">Material educativo e de organização pessoal. Não substitui orientação profissional individual quando necessária.</p>
@@ -944,20 +944,20 @@ body{font-family:&#x27;DM Sans&#x27;,Arial,sans-serif;color:var(--ink);-webkit-f
   <details><summary>Preciso imprimir tudo?</summary><p>Não. Você pode consultar o material no celular ou computador e imprimir somente as páginas que quiser preencher à mão.</p></details>
   <details><summary>E se faltarem menos de quatro semanas para eu voltar?</summary><p>Use o plano de forma flexível. Priorize as atividades mais importantes para sua realidade e adapte a sequência ao tempo disponível.</p></details>
   <details><summary>O kit garante que minha adaptação será fácil?</summary><p>Não é possível garantir como será a adaptação. O objetivo é ajudar você a organizar decisões e pensar em alternativas antes do retorno.</p></details>
-  <details><summary>Como funcionam reembolso e suporte?</summary><p>Você tem garantia de 7 dias. Se o material não fizer sentido para a sua realidade, solicite o reembolso conforme as condições exibidas no checkout da Kiwify. O suporte também é feito pelos canais informados no checkout após a compra.</p></details>
+  <details><summary>Como funcionam reembolso e suporte?</summary><p>Você tem garantia de 7 dias. Se o material não fizer sentido para a sua realidade, solicite o reembolso conforme as condições exibidas no checkout da Hotmart. O suporte também é feito pelos canais informados no checkout após a compra.</p></details>
  </div>
 </section>
 
 <!-- LAST CTA -->
 <section class="last-cta">
  <svg class="bg" viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="#fff"><circle cx="180" cy="120" r="150" opacity=".35"/><circle cx="1420" cy="380" r="210" opacity=".28"/><circle cx="820" cy="60" r="90" opacity=".25"/><circle cx="1180" cy="90" r="46" opacity=".4"/><circle cx="420" cy="420" r="70" opacity=".3"/></g><g fill="#c9a36a" opacity=".6"><path d="M300 300l8 18 18 8-18 8-8 18-8-18-18-8 18-8z"/><path d="M1300 160l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/></g></svg>
- <div class="container reveal"><div class="kicker">🎁 Seu presente de Natal: um plano possível</div><h2>Você não precisa ter tudo <em style="color:#fff">resolvido hoje.</em></h2><p>Comece organizando o que está ao seu alcance e construa um plano que faça sentido para você e sua família.</p><a class="btn" href="https://pay.kiwify.com.br/17afmRx" target="_blank" rel="noopener">Conhecer o Kit Licença Acabando <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+ <div class="container reveal"><div class="kicker">🎁 Seu presente de Natal: um plano possível</div><h2>Você não precisa ter tudo <em style="color:#fff">resolvido hoje.</em></h2><p>Comece organizando o que está ao seu alcance e construa um plano que faça sentido para você e sua família.</p><a class="btn" href="https://pay.hotmart.com/L108396298Q?off=2y7ptyxe" target="_blank" rel="noopener">Conhecer o Kit Licença Acabando <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
 </section>
 </main>
 
-<footer><div class="container footer-row"><div><strong>Volta ao Trabalho Mãe</strong><p>Produto digital de apoio ao planejamento da volta ao trabalho após a licença-maternidade.</p><p>A compra é finalizada no checkout seguro da Kiwify, onde ficam as condições de pagamento, reembolso e atendimento.</p></div><div>© 2026 Volta ao Trabalho Mãe</div></div></footer>
+<footer><div class="container footer-row"><div><strong>Volta ao Trabalho Mãe</strong><p>Produto digital de apoio ao planejamento da volta ao trabalho após a licença-maternidade.</p><p>A compra é finalizada no checkout seguro da Hotmart, onde ficam as condições de pagamento, reembolso e atendimento.</p></div><div>© 2026 Volta ao Trabalho Mãe</div></div></footer>
 
-<div class="mobile-cta" id="mcta"><div><small class="muted">Kit digital</small><br><b>R$ 19,90</b></div><a class="btn sm" href="https://pay.kiwify.com.br/17afmRx" target="_blank" rel="noopener">Quero meu kit <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+<div class="mobile-cta" id="mcta"><div><small class="muted">Kit digital</small><br><b>R$ 19,90</b></div><a class="btn sm" href="https://pay.hotmart.com/L108396298Q?off=2y7ptyxe" target="_blank" rel="noopener">Quero meu kit <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
 
 <script>
 (function(){
