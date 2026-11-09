@@ -475,20 +475,28 @@ header{border-bottom:2px solid rgba(212,169,80,.55)!important}
 .btn.light{background:#fff!important;color:#a5242f!important;border:1px solid #efc9cc!important;box-shadow:0 8px 22px rgba(122,20,30,.1)!important}.btn.light:hover{background:#fdecec!important}
 </style>
 <script>document.documentElement.classList.add('js')</script>
-<!-- Meta Pixel -->
+<!-- Meta Pixel Code -->
 <script>
-(function(){
- var PIXEL_ID='1142489886806167';
- if(!/^\d{8,20}$/.test(PIXEL_ID))return; /* enquanto não trocar o ID, nada é enviado */
- !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
- fbq('init',PIXEL_ID);fbq('track','PageView');
- /* clique em qualquer botão que leva ao checkout da Hotmart = InitiateCheckout */
- document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="hotmart"]');if(a)fbq('track','InitiateCheckout',{value:19.90,currency:'BRL',content_name:'Kit Licença Acabando'})},true);
- /* ao chegar na seção do preço = ViewContent (uma vez) */
- var p=document.getElementById('comprar');if(p&&'IntersectionObserver'in window){var o=new IntersectionObserver(function(en){if(en[0].isIntersecting){fbq('track','ViewContent',{content_name:'Kit Licença Acabando',value:19.90,currency:'BRL'});o.disconnect()}},{threshold:.4});o.observe(p)}
-})();
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1142489886806167');
+fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1142489886806167&ev=PageView&noscript=1" alt=""/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1142489886806167&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Eventos extras: ViewContent (chegou no preço) e InitiateCheckout (clicou para comprar na Hotmart) -->
+<script>
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="hotmart"]');if(a&&window.fbq)fbq('track','InitiateCheckout',{value:19.90,currency:'BRL',content_name:'Kit Licença Acabando'})},true);
+document.addEventListener('DOMContentLoaded',function(){var p=document.getElementById('comprar');if(p&&window.fbq&&'IntersectionObserver'in window){var o=new IntersectionObserver(function(en){if(en[0].isIntersecting){fbq('track','ViewContent',{content_name:'Kit Licença Acabando',value:19.90,currency:'BRL'});o.disconnect()}},{threshold:.12});o.observe(p)}});
+</script>
 </head>
 <body>
 <header id="top">
